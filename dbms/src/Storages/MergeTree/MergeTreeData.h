@@ -646,7 +646,6 @@ private:
             throw Exception("Can't modify " + (*it)->getNameWithState(), ErrorCodes::LOGICAL_ERROR);
     }
 
-
     /// Used to serialize calls to grabOldParts.
     std::mutex grab_old_parts_mutex;
     /// The same for clearOldTemporaryDirectories.
